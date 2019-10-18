@@ -50,7 +50,7 @@ export default class Create extends  React.Component<IProps, IState> {
         this.setState(nextState);
     }
     private onSave = () => { 
-        BaseService.create("/persons/add", this.state.persons).then(
+        BaseService.create<Persons>("/persons/add", this.state.persons).then(
             (rp) => {
                 if (rp.Status) {
                     toastr.success('Member saved.'); 

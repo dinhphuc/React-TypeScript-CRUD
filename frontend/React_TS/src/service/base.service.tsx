@@ -9,7 +9,7 @@ export default class BaseService {
     public static async getAll<T>(url: string): Promise<Response> {
         let res = await axios.get<Array<T>>(this.baseURL + url)
             .then(response => {
-                return new Response(true, response.data, "Thành công", "");
+                return new Response(true, response.data as Array<T>, "Thành công", "");
             })
             .catch(function (error) {
                 return new Response(false, null, "Lỗi", error);

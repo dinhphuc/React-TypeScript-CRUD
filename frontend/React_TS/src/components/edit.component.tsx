@@ -57,7 +57,7 @@ export default class Edit extends React.Component<IProps, IState> {
     }
 
     public componentDidMount() { 
-        BaseService.get('/persons/edit/', this.props.match.params.id).then(
+        BaseService.get<Persons>('/persons/edit/', this.props.match.params.id).then(
             (rp) => {
                 if (rp.Status) {
                     this.setState({ persons: rp.Data });
@@ -75,7 +75,7 @@ export default class Edit extends React.Component<IProps, IState> {
     private onSave = () => {
 
         console.log(this.state.persons);
-        BaseService.update("/persons/update/", this.props.match.params.id,this.state.persons).then(
+        BaseService.update<Persons>("/persons/update/", this.props.match.params.id,this.state.persons).then(
             (rp) => {
                 if (rp.Status) {
                     toastr.success('Member saved.');

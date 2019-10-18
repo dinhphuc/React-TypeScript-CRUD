@@ -23,7 +23,7 @@ class Index extends React.Component<IProps, IState> {
     }
 
     public componentDidMount() {
-        BaseService.getAll("/persons").then(
+        BaseService.getAll<Persons>("/persons").then(
             (rp) => {
                 if (rp.Status) {
                     this.setState({ listPersons: rp.Data });
