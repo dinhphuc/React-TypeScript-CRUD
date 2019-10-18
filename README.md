@@ -7,4 +7,12 @@
 
 - My SQL
 - Node JS
-- Yarn
+- Yarn 
+
+#### Add and Edit
+
+![](https://i.imgur.com/R7jM9w0.png) 
+
+#### List
+
+![](https://i.imgur.com/CnZDnI6.png) 
