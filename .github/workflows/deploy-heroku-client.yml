@@ -1,0 +1,23 @@
+name: Deploy Client Heroku
+
+on:
+  push:
+    branches: [product]  
+jobs:
+
+  deploy:
+      name: Deploy
+      runs-on: ubuntu-latest
+
+      defaults:
+       run:
+        working-directory: ./frontend/React_TS
+      steps: 
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: ${{ secrets.HEROKU_APP_NAME_CLIENT }}
+          heroku_email: "phucnd.zit@gmail.com"
+          remote_branch: "test"
+          appdir: "frontend/React_TS"
