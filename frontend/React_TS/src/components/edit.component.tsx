@@ -1,9 +1,9 @@
 import React from 'react';
 import * as toastr from 'toastr';
-import Persons from '../models/persons';
+import Person from '../models/person';
 import BaseService from '../service/base.service';
 import { History } from 'history';
-import { PersonsPage } from './page.form'; 
+import { PersonPage } from './page.form'; 
 
 
 interface IProps { 
@@ -19,7 +19,7 @@ interface IProps {
     }
 }
 interface IState {
-    persons: Persons
+    person: Person
 }
 
 
@@ -30,11 +30,11 @@ export default class Edit extends React.Component<IProps, IState> {
         super(props);
 
         this.state = {
-            persons: {
+            person: {
                 FullName: '',
                 Address: '',
                 Age: 0,
-                ID: 0
+                Id: ''
             }
         }
         this.onFieldValueChange = this.onFieldValueChange.bind(this);
@@ -47,8 +47,8 @@ export default class Edit extends React.Component<IProps, IState> {
     private onFieldValueChange(fieldName: string, value: string) { 
         const nextState = {
             ...this.state,
-            persons: {
-                ...this.state.persons,
+            person: {
+                ...this.state.person,
                 [fieldName]: value,
             }
         };
@@ -57,10 +57,11 @@ export default class Edit extends React.Component<IProps, IState> {
     }
 
     public componentDidMount() { 
-        BaseService.get<Persons>('/persons/edit/', this.props.match.params.id).then(
+        BaseService.get<Person>('/person/edit/', this.props.match.params.id).then(
             (rp) => {
                 if (rp.Status) {
-                    this.setState({ persons: rp.Data });
+                    const person = rp.Data;
+                    this.setState({ person: new Person(person._id, person.fullname,person.address, person.age )});
                 } else {
                     toastr.error(rp.Messages);
                     console.log("Messages: " + rp.Messages);
@@ -74,8 +75,8 @@ export default class Edit extends React.Component<IProps, IState> {
 
     private onSave = () => {
 
-        console.log(this.state.persons);
-        BaseService.update<Persons>("/persons/update/", this.props.match.params.id,this.state.persons).then(
+        console.log(this.state.person);
+        BaseService.update<Person>("/person/update/", this.props.match.params.id,this.state.person).then(
             (rp) => {
                 if (rp.Status) {
                     toastr.success('Member saved.');
@@ -92,8 +93,8 @@ export default class Edit extends React.Component<IProps, IState> {
  
     render() {
         return (
-            <PersonsPage
-                persons={this.state.persons}
+            <PersonPage
+                person={this.state.person}
                 onChange={this.onFieldValueChange}
                 onSave={this.onSave}
             />

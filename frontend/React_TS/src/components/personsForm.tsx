@@ -1,15 +1,15 @@
 import * as React from 'react';
-import Persons from '../models/persons';
+import Person from '../models/person';
 
 import { Input, Button } from '../common/components/form';
 
 interface Props {
-    persons: Persons;
+    person: Person;
     onChange: (fieldName: string, value: string) => void;
     onSave: () => void;
 }
 
-export const PersonsForm: React.StatelessComponent<Props> = (props) => { 
+export const PersonForm: React.FunctionComponent<Props> = (props) => { 
     return (
         <form>
             <h1>Manage member</h1>
@@ -17,27 +17,27 @@ export const PersonsForm: React.StatelessComponent<Props> = (props) => {
             <Input
                 name="FullName"
                 label="FullName"
-                value={props.persons.FullName}
+                value={props.person.FullName}
                 onChange={props.onChange}
             />
 
             <Input
                 name="Address"
                 label="Address"
-                value={props.persons.Address}
+                value={props.person.Address}
                 onChange={props.onChange}
             />
 
             <Input
                 name="Age"
                 label="Age"
-                value={props.persons.Age.toString()}
+                value={props.person.Age.toString()}
                 onChange={props.onChange}
             />
 
             <Button
                 label="Save"
-                className="btn btn-success"
+                className="btn btn-success mt-2"
                 onClick={props.onSave}
             />
         </form>

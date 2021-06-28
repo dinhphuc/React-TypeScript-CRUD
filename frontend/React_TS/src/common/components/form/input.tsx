@@ -9,7 +9,7 @@ interface Props {
   error?: string;
 }
 
-export const Input: React.StatelessComponent<Props> = (props) => {
+export const Input: React.FunctionComponent<Props> = (props) => {
   return (
     <div className={formatWrapperClass(props)}>
       <label htmlFor={props.name}>{props.label}</label>

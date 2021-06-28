@@ -1,17 +1,17 @@
 import * as React from 'react';
-import Persons from '../models/persons';
-import { PersonsForm } from './personsForm';
+import Person from '../models/person';
+import { PersonForm } from './personsForm';
 
 interface IProps {
-    persons: Persons;
+    person: Person;
     onChange: (fieldName: string, value: string) => void;
     onSave: () => void;
 }
 
-export const PersonsPage: React.StatelessComponent<IProps> = (props: IProps) => {  
+export const PersonPage: React.FunctionComponent<IProps> = (props: IProps) => {  
     return (
-        <PersonsForm
-            persons={props.persons}
+        <PersonForm
+            person={props.person}
             onChange={props.onChange}
             onSave={props.onSave}
         />

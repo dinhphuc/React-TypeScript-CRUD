@@ -6,7 +6,7 @@ interface Props {
   onClick: () => void;
 }
 
-export const Button: React.StatelessComponent<Props> = (props) => {
+export const Button: React.FunctionComponent<Props> = (props) => {
 
   return (
     <button type="button"
