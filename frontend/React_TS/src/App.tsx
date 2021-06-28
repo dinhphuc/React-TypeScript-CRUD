@@ -7,6 +7,7 @@ import 'toastr/build/toastr.min.css';
 import Index from './components/index.component';
 import Edit from './components/edit.component';
 import Create from './components/create.component';
+import Home from './components/home.component';
 
 const App: React.FC = () => {
   return (
@@ -32,6 +33,7 @@ const App: React.FC = () => {
                   <Route exact path='/create' component={ Create } />
                   <Route path='/edit/:id' component={ Edit } />
                   <Route path='/index' component={ Index } />
+                  <Route path='/' component={ Home } />
               </Switch>
           </div>
       </Router>
