@@ -34,7 +34,7 @@
     "serve-favicon": "~2.4.2",
     "session": "^0.1.0",
     "uuid": "^3.1.0",
-    "validator": "^13.5.2"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
