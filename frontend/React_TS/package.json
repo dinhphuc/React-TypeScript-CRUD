@@ -9,7 +9,7 @@
     "@types/react-dom": "17.0.8",
     "@types/react-router-dom": "^5.1.7",
     "@types/toastr": "^2.1.38",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "bootstrap": "^5.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
