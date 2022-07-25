@@ -21,9 +21,9 @@
     <br />
     <a href="https://sal-react-demo-client.herokuapp.com/">View Demo</a>
     ·
-    <a href="https://github.com/seakBz/React-TypeScript-CRUD/issues">Report Bug</a>
+    <a href="https://github.com/dinhphuc/React-TypeScript-CRUD/issues">Report Bug</a>
     ·
-    <a href="https://github.com/seakBz/React-TypeScript-CRUD/issues">Request Feature</a> 
+    <a href="https://github.com/dinhphuc/React-TypeScript-CRUD/issues">Request Feature</a> 
   </p>
 </p>
 
@@ -97,7 +97,7 @@ You need setup prerequisites:
 1. Get connection of MongoDB at [https://www.mongodb.com/)
 2. Clone the repo
    ```sh
-   git clone https://github.com/seakBz/React-TypeScript-CRUD.git
+   git clone https://github.com/dinhphuc/React-TypeScript-CRUD.git
    ```
 3. Install NPM packages
    ```sh
@@ -157,7 +157,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Dinh Phuc - [@facbook](https://fb.com/it.sauanla) - phucnd.zit@gmail.com
 
-Project Link: [https://github.com/seakBz/React-TypeScript-CRUD](https://github.com/seakBz/React-TypeScript-CRUD)
+Project Link: [https://github.com/dinhphuc/React-TypeScript-CRUD](https://github.com/dinhphuc/React-TypeScript-CRUD)
 
 
 
@@ -168,14 +168,14 @@ Project Link: [https://github.com/seakBz/React-TypeScript-CRUD](https://github.c
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/seakBz/React-TypeScript-CRUD.svg?style=for-the-badge
-[contributors-url]: https://github.com/seakBz/React-TypeScript-CRUD/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/seakBz/React-TypeScript-CRUD.svg?style=for-the-badge
-[forks-url]: https://github.com/seakBz/React-TypeScript-CRUD/network/members
-[stars-shield]: https://img.shields.io/github/stars/seakBz/React-TypeScript-CRUD.svg?style=for-the-badge
-[stars-url]: https://github.com/seakBz/React-TypeScript-CRUD/stargazers
-[issues-shield]: https://img.shields.io/github/issues/seakBz/React-TypeScript-CRUD.svg?style=for-the-badge
-[issues-url]: https://github.com/seakBz/React-TypeScript-CRUD/issues
-[license-shield]: https://img.shields.io/github/license/seakBz/React-TypeScript-CRUD.svg?style=for-the-badge
-[license-url]: https://github.com/seakBz/React-TypeScript-CRUD/blob/main/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/dinhphuc/React-TypeScript-CRUD.svg?style=for-the-badge
+[contributors-url]: https://github.com/dinhphuc/React-TypeScript-CRUD/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/dinhphuc/React-TypeScript-CRUD.svg?style=for-the-badge
+[forks-url]: https://github.com/dinhphuc/React-TypeScript-CRUD/network/members
+[stars-shield]: https://img.shields.io/github/stars/dinhphuc/React-TypeScript-CRUD.svg?style=for-the-badge
+[stars-url]: https://github.com/dinhphuc/React-TypeScript-CRUD/stargazers
+[issues-shield]: https://img.shields.io/github/issues/dinhphuc/React-TypeScript-CRUD.svg?style=for-the-badge
+[issues-url]: https://github.com/dinhphuc/React-TypeScript-CRUD/issues
+[license-shield]: https://img.shields.io/github/license/dinhphuc/React-TypeScript-CRUD.svg?style=for-the-badge
+[license-url]: https://github.com/dinhphuc/React-TypeScript-CRUD/blob/main/LICENSE.txt
 [product-screenshot]: https://i.imgur.com/CnZDnI6.png
